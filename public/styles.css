@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #00edfa;
+}
+
+.app-container {
+	display: flex;
+	max-height: 100vh;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.game-heading {
+	position: absolute;
+	top: 40px;
+	font-weight: normal;
+}
+
+.game-container {
+	background-color: #00fec4;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border: 1px solid #000000;
+	text-align: center;
+}
+
+.box {
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.game-result {
+	position: absolute;
+	font-size: 20px;
+	font-weight: 600;
+	top: 360px;
+	color: #205e2e;
+}
+
+.restart-btn {
+	position: absolute;
+	top: 400px;
+	border: none;
+	padding: 10px;
+	border-radius: 50px;
+	background-color: #00aaff;
+	cursor: pointer;
+}
